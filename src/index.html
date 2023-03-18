@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="../src/main.css"> -->
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body class="bg-[#0a192f]">
+  <div class="md:fixed w-full z-[9999] py-6 md:py-0 ">
+    <nav class="flex px-5 justify-between text-[#ccd6f6] md:bg-transparent z-50  items-center md:py-4  md:px-16">
+      <a href="log"><img src="../public/images/logo (1).svg" class="h-10" alt="logo"></a>
+      <ul
+        class=" font-ct hidden   md:flex md:justify-between fixed md:bg-transparent  z-50 bg-[#112240]  md:gap-0 gap-8 md:relative top-0 h-full md:h-auto w-[70vw] right-0 justify-center md:flex-row flex-col items-center md:w-2/5"
+        id="sidebar">
+        <span id="navbtn" class="text-white absolute top-10 right-10 md:hidden text-lg">
+          <img class="h-4" src="../public/images/Group 65.svg">
+        </span>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <a href="../../public/images/Faith Godwin 2023.pdf"
+          class="border inline md:hidden text-[#64FFDA] border-[#64FFDA] px-4 py-2 rounded-3xl" download><span
+            class="font-ct">Download CV </span>&DownArrowBar;</a>
+      </ul>
+      <a href="../../public/images/Faith Godwin 2023.pdf"
+        class="border md:inline hidden text-[#64FFDA] border-[#64FFDA] px-4 py-2 rounded-3xl" download><span
+          class="font-ct">Download CV </span>&DownArrowBar;</a>
+      <button id="menu" class="md:hidden"><img src="../../public/images/menu.svg" alt="sidebar"></button>
+    </nav>
+  </div>
+  <section id="home" class="flex md:h-screen relative h-[100dvh]   items-center  justify-center">
+    <div class="h- relative flex  flex-col items-center md:-top-14 -top-60 ml-2  mr-5 md:m-auto "> <img
+        src="/public/images/Group 63 (1).png" class="md:h-[45vh] h-[30vh]" alt="profile">
+      <div class="flex md:-mt-14 flex-col items-center ">
+        <h1 class="font-bold font-bgg text-[#ccd6f6] text-4xl -mt-7 md:text-7xl ">Faith Godwin Friday</h1>
+        <h1
+          class="font-semibold  md:text-xl text-[#8892b0] text-xl md:fixed md:bottom-[16rem] bottom-[-16rem]  -right-[6rem] md:-right-1.5 md:rotate-90 font-ct">
+          Software Engineer </h1>
+        <div
+          class="md:h-32 h-10 right-[-1rem] hidden md:block md:right-24 md:bottom-0 absolute md:fixed bottom-[-25rem] bg-[#ccd6f6] w-[1px]">
+        </div>
+      </div>
+      <p class="text-[#ccd6f6] absolute font-bgg bottom-[-7.5rem] md:-bottom-[4.5rem] text-center text-base">I’m a
+        software engineer
+        specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused
+        on building accessible, human-centered products at <a class="text-[#64FFDA]" href="http://brightstar.ng/"
+          title="brightstar,ng">Brightstar.ng</a>.</p>
+      <a href="https://www.linkedin.com/in/faith-godwin-163a48213/"
+        class="border md:inline absolute -bottom-[11rem] md:-bottom-32  text-[#64FFDA] border-[#64FFDA] px-4 py-2 rounded-3xl"><span
+          class="font-ct">View Linkedin Profile </span></a>
+      <div class="absolute md:right-28 -right-4 bottom-16 md:bottom-24">
+        <div class="relative">
+          <span class="flex h-14 w-14 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#64FFDA] opacity-75"></span>
+            <div class="bg-red-400 relative grid place-content-center w-14 h-14 text-center m-auto rounded-full px-4">
+              <a href="mailto:faithgodwin821@gmail.com" class=" font-bold text-xs text-red-900 ">LET's <br> TALK</a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex md:flex-col absolute left-5 bottom-28 md:fixed  justify-center items-center  md:left-20 md:bottom-0 gap-8">
+      <a href="https://www.linkedin.com/in/faith-godwin-163a48213/"><svg width="22" height="22" viewBox="0 0 22 22"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.89648 21.8745H0.361328V7.27002H4.89648V21.8745ZM2.62646 5.27783C1.17627 5.27783 0 4.07666 0 2.62646C1.03799e-08 1.92988 0.276716 1.26183 0.769274 0.769274C1.26183 0.276716 1.92988 0 2.62646 0C3.32305 0 3.9911 0.276716 4.48366 0.769274C4.97621 1.26183 5.25293 1.92988 5.25293 2.62646C5.25293 4.07666 4.07617 5.27783 2.62646 5.27783ZM21.8701 21.8745H17.3447V14.7651C17.3447 13.0708 17.3105 10.8979 14.9868 10.8979C12.6289 10.8979 12.2676 12.7388 12.2676 14.6431V21.8745H7.73731V7.27002H12.0869V9.26221H12.1504C12.7559 8.11475 14.2349 6.90381 16.4414 6.90381C21.0312 6.90381 21.875 9.92627 21.875 13.8521V21.8745H21.8701Z"
+            fill="#CCD6F6" />
+        </svg>
+      </a>
+      <a href="https://github.com/Iam-Ignite?tab=overview&from=2023-03-01&to=2023-03-07"><svg width="25" height="24"
+          viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.10059 19.0137C8.10059 19.1113 7.98828 19.1895 7.84668 19.1895C7.68555 19.2041 7.57324 19.126 7.57324 19.0137C7.57324 18.916 7.68555 18.8379 7.82715 18.8379C7.97363 18.8232 8.10059 18.9014 8.10059 19.0137ZM6.58203 18.7939C6.54785 18.8916 6.64551 19.0039 6.79199 19.0332C6.91895 19.082 7.06543 19.0332 7.09473 18.9355C7.12402 18.8379 7.03125 18.7256 6.88477 18.6816C6.75781 18.6475 6.61621 18.6963 6.58203 18.7939ZM8.74023 18.7109C8.59863 18.7451 8.50098 18.8379 8.51562 18.9502C8.53027 19.0479 8.65723 19.1113 8.80371 19.0771C8.94531 19.043 9.04297 18.9502 9.02832 18.8525C9.01367 18.7598 8.88184 18.6963 8.74023 18.7109ZM11.9531 0C5.18066 0 0 5.1416 0 11.9141C0 17.3291 3.4082 21.9629 8.27637 23.5938C8.90137 23.7061 9.12109 23.3203 9.12109 23.0029C9.12109 22.7002 9.10645 21.0303 9.10645 20.0049C9.10645 20.0049 5.68848 20.7373 4.9707 18.5498C4.9707 18.5498 4.41406 17.1289 3.61328 16.7627C3.61328 16.7627 2.49512 15.9961 3.69141 16.0107C3.69141 16.0107 4.90723 16.1084 5.57617 17.2705C6.64551 19.1553 8.4375 18.6133 9.13574 18.291C9.24805 17.5098 9.56543 16.9678 9.91699 16.6455C7.1875 16.3428 4.43359 15.9473 4.43359 11.25C4.43359 9.90723 4.80469 9.2334 5.58594 8.37402C5.45898 8.05664 5.04395 6.74805 5.71289 5.05859C6.7334 4.74121 9.08203 6.37695 9.08203 6.37695C10.0586 6.10352 11.1084 5.96191 12.1484 5.96191C13.1885 5.96191 14.2383 6.10352 15.2148 6.37695C15.2148 6.37695 17.5635 4.73633 18.584 5.05859C19.2529 6.75293 18.8379 8.05664 18.7109 8.37402C19.4922 9.23828 19.9707 9.91211 19.9707 11.25C19.9707 15.9619 17.0947 16.3379 14.3652 16.6455C14.8145 17.0312 15.1953 17.7637 15.1953 18.9111C15.1953 20.5566 15.1807 22.5928 15.1807 22.9932C15.1807 23.3105 15.4053 23.6963 16.0254 23.584C20.9082 21.9629 24.2188 17.3291 24.2188 11.9141C24.2188 5.1416 18.7256 0 11.9531 0ZM4.74609 16.8408C4.68262 16.8896 4.69727 17.002 4.78027 17.0947C4.8584 17.1729 4.9707 17.207 5.03418 17.1436C5.09766 17.0947 5.08301 16.9824 5 16.8896C4.92188 16.8115 4.80957 16.7773 4.74609 16.8408ZM4.21875 16.4453C4.18457 16.5088 4.2334 16.5869 4.33105 16.6357C4.40918 16.6846 4.50684 16.6699 4.54102 16.6016C4.5752 16.5381 4.52637 16.46 4.42871 16.4111C4.33105 16.3818 4.25293 16.3965 4.21875 16.4453ZM5.80078 18.1836C5.72266 18.2471 5.75195 18.3936 5.86426 18.4863C5.97656 18.5986 6.11816 18.6133 6.18164 18.5352C6.24512 18.4717 6.21582 18.3252 6.11816 18.2324C6.01074 18.1201 5.86426 18.1055 5.80078 18.1836ZM5.24414 17.4658C5.16602 17.5146 5.16602 17.6416 5.24414 17.7539C5.32227 17.8662 5.4541 17.915 5.51758 17.8662C5.5957 17.8027 5.5957 17.6758 5.51758 17.5635C5.44922 17.4512 5.32227 17.4023 5.24414 17.4658Z"
+            fill="#CCD6F6" />
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/Mula.feels.9"> <svg width="14" height="25" viewBox="0 0 14 25" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.5122 14.0625L13.2065 9.53809H8.86523V6.60205C8.86523 5.36426 9.47168 4.15771 11.416 4.15771H13.3896V0.305664C13.3896 0.305664 11.5986 0 9.88623 0C6.31104 0 3.97412 2.16699 3.97412 6.08984V9.53809H0V14.0625H3.97412V25H8.86523V14.0625H12.5122Z"
+            fill="#CCD6F6" />
+        </svg>
+      </a>
+      <a href="https://twitter.com/feelscodes02?t=XyOYm4IFBCUoM53-IowZ0g&s=09"><svg width="25" height="21"
+          viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M22.4302 5.06025C22.446 5.28232 22.446 5.50444 22.446 5.72651C22.446 12.5 17.2906 20.3045 7.86802 20.3045C4.96509 20.3045 2.26841 19.4638 0 18.0044C0.412451 18.052 0.808984 18.0679 1.2373 18.0679C3.63257 18.0679 5.83755 17.2589 7.59834 15.8788C5.3458 15.8312 3.45811 14.356 2.80771 12.3255C3.125 12.373 3.44224 12.4048 3.77539 12.4048C4.2354 12.4048 4.69546 12.3413 5.12373 12.2303C2.77603 11.7544 1.01519 9.69224 1.01519 7.20176V7.13833C1.69727 7.51904 2.49048 7.75698 3.33115 7.78867C1.95107 6.8686 1.04692 5.29819 1.04692 3.52153C1.04692 2.56978 1.30068 1.69731 1.74487 0.935889C4.26709 4.04502 8.05835 6.07544 12.3096 6.29756C12.2303 5.91685 12.1827 5.52031 12.1827 5.12373C12.1827 2.3001 14.4669 0 17.3064 0C18.7816 0 20.1141 0.618652 21.05 1.61802C22.208 1.39595 23.3184 0.967627 24.302 0.380713C23.9212 1.57046 23.1122 2.56982 22.0494 3.2043C23.0805 3.09331 24.0799 2.80771 24.9999 2.41118C24.3021 3.42637 23.4295 4.33052 22.4302 5.06025Z"
+            fill="#CCD6F6" />
+        </svg>
+      </a>
+      <div class="md:h-32 h-10 hidden md:block bg-[#ccd6f6] w-[1px]"></div>
+    </div>
+  </section>
+  <section id="about" class="md:h-screen h-auto">
+    <div class="md:mx-52 p-10">
+      <h1 class="font-bold font-ct text-[#ccd6f6] text-2xl flex items-center md:text-3xl py-8">About Me <div
+          class="w-1/5 h-[1px] bg-[#ccd6f6] opacity-25 mx-4 mt-2"></div>
+      </h1>
+      <div class="grid place-items-center md:grid-cols-2 gap-24">
+        <div class="font-bold font-ct text-[#ccd6f6]">
+          <p> My journey as a developer began when I first discovered my love for coding and decided to pursue it as a
+            career. Over the years, I have had the opportunity to work on a variety of projects, both personal and
+            professional, and have consistently delivered high-quality results.</p><br>
+          <p>Throughout my career, I have had the opportunity to work with a diverse group of individuals, and I am a
+            strong team player who enjoys collaborating with others and bringing a positive attitude to every project.
+          </p><br>
+          <p>The following are technical skills I'm proficiency in: </p>
+          <div class="grid grid-cols-2 text-xl gap-2 mt-4">
+            <b><span class="text-[#64FFDA]">&star;</span> Javascript</b>
+            <b><span class="text-[#64FFDA]">&star;</span> Typescript</b>
+            <b><span class="text-[#64FFDA]">&star;</span> Reactjs</b>
+            <b><span class="text-[#64FFDA]">&star;</span> Nextjs</b>
+            <b><span class="text-[#64FFDA]">&star;</span> Nodejs</b>
+            <b><span class="text-[#64FFDA]">&star;</span> express</b>
+          </div>
+        </div>
+        <div class="border-2 w-96 md:p-0 p-6 img md:h-96 h-96 border-[#64FFDA] md:ml-16 rounded relative">
+          <img src="/public/images/PAXFUL (38).jpg" alt=""
+            class="w-96  img filterImage h-96 absolute md:-top-8 rounded right-4 top-5 md:-left-8">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="loading"
+    class="md:h-screen h-[100dvh] bg-[#0a192f] flex justify-center items-center w-full fixed top-0 z-[9999]">
+    <div class="flex wrap items-center relative">
+      <svg width="446" class="path" height="148" viewBox="0 0 466 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="animate"
+          d="M29.349 82.8479C29.349 62.0089 67.6667 48.2574 67.6667 25.5264C67.6667 12.2267 55.2708 0.677693 53.4115 0C53.5573 0.931827 53.6302 1.89189 53.6302 2.82372C53.6302 28.8302 0 46.2808 0 78.6688C0 92.7309 11.7396 101.033 24.2448 109.25C47.9792 122.436 52.7188 129.411 52.7188 133.703C52.7188 136.555 50.9688 138.503 50.9688 140C55.7448 135.284 57.3125 130.992 57.349 126.898C57.349 118.54 49.4375 111 41.2344 102.473C35.401 96.1759 29.349 90.4437 29.349 82.8479ZM104.198 71.8354C99.7865 52.973 75.7604 36.7084 69.6719 34.8729L71.1302 36.906C72.0052 38.3461 72.3698 39.9839 72.3698 41.7346C72.3698 54.3566 52.6094 73.1343 51.7344 74.6874C50.9323 76.1275 50.5677 77.6523 50.5677 79.1488C50.5677 84.8245 56.1094 91.0367 57.0938 91.0367C57.9688 91.0367 77.7292 75.3933 78.276 66.2727C80.6094 69.5764 81.5938 72.6543 81.5938 75.7039C81.5938 87.3376 66.3542 103.066 66.3542 103.066C66.3542 106.341 77.9844 118.088 79.2969 118.088C79.6615 118.088 80.099 117.693 80.4635 117.41C94.2812 106.313 105 93.4086 105 78.7818C105 76.5228 104.745 74.2073 104.198 71.8354Z"
+          fill="#64FFDA" />
+        <h1 class="animate absolute right-6">Ignite</h1>
+      </svg>
+    </div>
+
+
+  </div>
+
+  <!-- <div class="flex justify-center ">
+   
+     </div> -->
+  <section id="service">
+    <h1 class="font-bold text-center font-ct text-[#ccd6f6] text-2xl md:text-3xl py-16">Where I’ve Worked </h1>
+
+    <div class="flex text-[#ccd6f6] gap-6 md:flex-row flex-col items-center justify-center">
+      <div class="">
+        <ul class="flex md:flex-col px-6 gap-6">
+          <li class="pl-4 "><button class="px-4 py-2 btn-one">Brightstar
+              Intergal</button></li>
+          <li class="pl-4"><button class="px-4 py-2 btn-two">UBA Group</button></li>
+          <li class="pl-4"><button class="px-4 py-2 btn-three">HNG Internship</button></li>
+        </ul>
+      </div>
+      <div class="px-5 md:w-[40%]" id="job-one">
+        <h1>@Brightstar Intergal Technology solution: UBA , Lagos, Nigeria</h1>
+        <p>Stack:Javascript, .Net, Boostrap, Tailwindcss,JQuery, etc ...</p>
+        <p>Jan 2022 - Dec 2022</p>
+        <p>➢ Worked on a team to designand develop the company's application using HTML, CSS, and JavaScript.</p>
+        <p>➢ Created and maintained the website's style guide to ensure consistency in design and branding.</p>
+      </div>
+      <div class="px-5 md:w-[40%]" id="job-two">
+        <h1>Brightstar Intergal Technology solution</h1>
+        <p>Stack: React, Typescript, Redux,</p>
+        <p>July 2022 - Oct 2022</p>
+        <p>➢ Build from stretch the company's application using React, Redux, and TypeScript.</p>
+        <p>➢ Collaborated with the design team to incorporate visually appealing and user-friendly elements into the web
+          application.</p>
+        <p>➢ Collaborated with the back-end development team to integrate the front-end with the website's APIs.</p>
+      </div>
+      <div class="px-5 md:w-[40%]" id="job-three">
+        <h1>Intern, HNG, Zuri Chat, online</h1>
+        <p>Stack: Reactjs, TypeScript, Tailwindcss, Django</p>
+        <p>2021- JULY 2021</p>
+        <p>➢ Worked on a team to create a aplication from stretch.</p>
+
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h1 class="font-bold text-center font-ct text-[#ccd6f6] text-2xl md:text-3xl py-16">Featured Projects
+    </h1>
+  </section>
+  <div class="flex gap-14 mt-8 flex-col items-center">
+    <div class="flex relative items-center">
+      <div class="swiper overflow-x-hidden md-w-full " style="width: 40vw;">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper  scroll-m-0">
+          <!-- Slides -->
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Group 35597.png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Advanxced Search.png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/list organisation.png" alt="logo">
+          </div>
+          <!-- ... -->
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="w-96 md-w " style="top:10px">
+        <div style=" right: 8rem; top: 40px; z-index: 99;" class=" absolute swipper-r py-4 my-6 w-96">
+          <div class="flex flex-col width-auto"
+            style="justify-content: end; align-items: end; width: 35vw; padding: .2rem 1rem;">
+            <p class="" style="color: #64ffda;">Featured Project</p>
+            <a href class="font-bold font-bgg text-[#ccd6f6] font-sm " style="font-size: 2rem;">LeisTon</a>
+          </div>
+
+          <div style="background-color: #112240; padding: 2rem; width: 35vw;" class="text-[#8892b0] font-r width-auto">
+            LeishTon BoardGovTM provides vast amount of corporate/board governance data, accounting performance data and
+            market performance data, which are used primarily for research and relationship capital management purposes.
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="flex relative items-center">
+      <div class="w-96 md-w " style="top:10px">
+        <div style=" left: 0; top: 40px; z-index: 999;" class=" absolute swipper-r py-4 my-6 w-96">
+          <div class="flex flex-col width-auto"
+            style="justify-content: end; align-items: start; width: 35vw; padding: .2rem 1rem;">
+            <p class="" style="color: #64ffda;">Featured Project</p>
+            <a href class="font-bold font-bgg text-[#ccd6f6] font-sm " style="font-size: 2rem;">UBA SMART SERVICE</a>
+          </div>
+
+          <div style="background-color: #112240; padding: 2rem; width: 35vw;" class="text-[#8892b0] font-r width-auto">
+            A appication i develop with a team of back-ends due to none disclosement i can't share the live link and any
+            other information about it.
+
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper overflow-x-hidden md-w-full " style="width: 40vw;">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper  scroll-m-0">
+          <!-- Slides -->
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Login Screen (1).png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Automatic General Check - No data.png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Automatic General Check - With Data.png" alt="logo">
+          </div>
+          <!-- ... -->
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    </div>
+    <div class="flex relative items-center">
+      <div class="swiper overflow-x-hidden md-w-full " style="width: 40vw;">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper  scroll-m-0">
+          <!-- Slides -->
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Login page.png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Register page.png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/chat interface2.png" alt="logo">
+          </div>
+          <!-- ... -->
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="w-96 md-w " style="top:10px">
+        <div style=" right: 8rem; top: 40px; z-index: 99;" class=" absolute swipper-r py-4 my-6 w-96">
+          <div class="flex flex-col width-auto"
+            style="justify-content: end; align-items: end; width: 35vw; padding: .2rem 1rem;">
+            <p class="" style="color: #64ffda;">Featured Project</p>
+            <a href="https://chatmini-v1.netlify.app/" class="font-bold font-bgg text-[#ccd6f6] font-sm "
+              style="font-size: 2rem;">Chatmini</a>
+          </div>
+
+          <div style="background-color: #112240; padding: 2rem; width: 35vw;" class="text-[#8892b0] font-r width-auto">
+            This a chat app I develop using reactjs and fireBase and a help from a friend of my that is a ui/ux
+            developer it took me a week to develop but was able to learn more and enjoy the process.
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="flex relative items-center">
+      <div class="w-96 md-w " style="top:10px">
+        <div style=" left: 0; top: 40px; z-index: 999;" class=" absolute swipper-r py-4 my-6 w-96">
+          <div class="flex flex-col width-auto"
+            style="justify-content: end; align-items: start; width: 35vw; padding: .2rem 1rem;">
+            <p class="" style="color: #64ffda;">Featured Project</p>
+            <a href="http://spinetest.azurewebsites.net/" class="font-bold font-bgg text-[#ccd6f6] font-sm "
+              style="font-size: 2rem;">Spine</a>
+          </div>
+
+          <div style="background-color: #112240; padding: 2rem; width: 35vw;" class="text-[#8892b0] font-r width-auto">
+            Manage inventory, track expenses, monitor cash flow and more.All in one place.
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper overflow-x-hidden md-w-full " style="width: 40vw;">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper  scroll-m-0">
+          <!-- Slides -->
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Screen Shot 2023-03-17 at 12.44.32 AM.png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Screen Shot 2023-03-17 at 12.50.08 AM.png" alt="logo">
+          </div>
+          <div class="swiper-slide relative">
+            <img class="slider-item bg-project object-cover " style="border-radius: 5px;"
+              src="/public/images/Screen Shot 2023-03-17 at 12.51.00 AM.png" alt="logo">
+          </div>
+          <!-- ... -->
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Slider main container -->
+
+
+  <section>
+    <h1 class="font-bold text-center font-ct text-[#ccd6f6] md:text-3xl py-16">Other Noteworthy Projects
+    </h1>
+
+    <div class="grid md:grid-cols-3 grid-cols-1 px-8 gap-6 md:px-44">
+
+
+      <div class="bg-[#112240] shadow-sm hover:translate-y-2 transition-all p-8 h-auto m-4">
+
+        <div class="flex justify-between">
+          <a href="">
+            <svg width="20" height="20" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.6562 3.125H13.2812L10.1562 0H2.34375C1.04932 0 0 1.04932 0 2.34375V16.4062C0 17.7007 1.04932 18.75 2.34375 18.75H22.6562C23.9507 18.75 25 17.7007 25 16.4062V5.46875C25 4.17432 23.9507 3.125 22.6562 3.125Z"
+                fill="#CCD6F6" />
+            </svg>
+          </a>
+          <div class="flex gap-4">
+
+            <a href="https://githubuserprofiles.netlify.app/">
+              <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.10059 19.0137C8.10059 19.1113 7.98828 19.1895 7.84668 19.1895C7.68555 19.2041 7.57324 19.126 7.57324 19.0137C7.57324 18.916 7.68555 18.8379 7.82715 18.8379C7.97363 18.8232 8.10059 18.9014 8.10059 19.0137ZM6.58203 18.7939C6.54785 18.8916 6.64551 19.0039 6.79199 19.0332C6.91895 19.082 7.06543 19.0332 7.09473 18.9355C7.12402 18.8379 7.03125 18.7256 6.88477 18.6816C6.75781 18.6475 6.61621 18.6963 6.58203 18.7939ZM8.74023 18.7109C8.59863 18.7451 8.50098 18.8379 8.51562 18.9502C8.53027 19.0479 8.65723 19.1113 8.80371 19.0771C8.94531 19.043 9.04297 18.9502 9.02832 18.8525C9.01367 18.7598 8.88184 18.6963 8.74023 18.7109ZM11.9531 0C5.18066 0 0 5.1416 0 11.9141C0 17.3291 3.4082 21.9629 8.27637 23.5938C8.90137 23.7061 9.12109 23.3203 9.12109 23.0029C9.12109 22.7002 9.10645 21.0303 9.10645 20.0049C9.10645 20.0049 5.68848 20.7373 4.9707 18.5498C4.9707 18.5498 4.41406 17.1289 3.61328 16.7627C3.61328 16.7627 2.49512 15.9961 3.69141 16.0107C3.69141 16.0107 4.90723 16.1084 5.57617 17.2705C6.64551 19.1553 8.4375 18.6133 9.13574 18.291C9.24805 17.5098 9.56543 16.9678 9.91699 16.6455C7.1875 16.3428 4.43359 15.9473 4.43359 11.25C4.43359 9.90723 4.80469 9.2334 5.58594 8.37402C5.45898 8.05664 5.04395 6.74805 5.71289 5.05859C6.7334 4.74121 9.08203 6.37695 9.08203 6.37695C10.0586 6.10352 11.1084 5.96191 12.1484 5.96191C13.1885 5.96191 14.2383 6.10352 15.2148 6.37695C15.2148 6.37695 17.5635 4.73633 18.584 5.05859C19.2529 6.75293 18.8379 8.05664 18.7109 8.37402C19.4922 9.23828 19.9707 9.91211 19.9707 11.25C19.9707 15.9619 17.0947 16.3379 14.3652 16.6455C14.8145 17.0312 15.1953 17.7637 15.1953 18.9111C15.1953 20.5566 15.1807 22.5928 15.1807 22.9932C15.1807 23.3105 15.4053 23.6963 16.0254 23.584C20.9082 21.9629 24.2188 17.3291 24.2188 11.9141C24.2188 5.1416 18.7256 0 11.9531 0ZM4.74609 16.8408C4.68262 16.8896 4.69727 17.002 4.78027 17.0947C4.8584 17.1729 4.9707 17.207 5.03418 17.1436C5.09766 17.0947 5.08301 16.9824 5 16.8896C4.92188 16.8115 4.80957 16.7773 4.74609 16.8408ZM4.21875 16.4453C4.18457 16.5088 4.2334 16.5869 4.33105 16.6357C4.40918 16.6846 4.50684 16.6699 4.54102 16.6016C4.5752 16.5381 4.52637 16.46 4.42871 16.4111C4.33105 16.3818 4.25293 16.3965 4.21875 16.4453ZM5.80078 18.1836C5.72266 18.2471 5.75195 18.3936 5.86426 18.4863C5.97656 18.5986 6.11816 18.6133 6.18164 18.5352C6.24512 18.4717 6.21582 18.3252 6.11816 18.2324C6.01074 18.1201 5.86426 18.1055 5.80078 18.1836ZM5.24414 17.4658C5.16602 17.5146 5.16602 17.6416 5.24414 17.7539C5.32227 17.8662 5.4541 17.915 5.51758 17.8662C5.5957 17.8027 5.5957 17.6758 5.51758 17.5635C5.44922 17.4512 5.32227 17.4023 5.24414 17.4658Z"
+                  fill="#CCD6F6" />
+              </svg>
+            </a>
+
+            <a href="https://github.com/Iam-Ignite/Github_User_Finder">
+              <svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.9479 9.05232C18.8652 11.9727 18.8252 16.6548 15.9655 19.5303C15.9601 19.5362 15.9537 19.5426 15.9479 19.5484L12.6666 22.8297C9.77258 25.7237 5.06414 25.7233 2.17053 22.8297C-0.723511 19.9361 -0.723511 15.2271 2.17053 12.3336L3.98235 10.5218C4.46282 10.0413 5.29026 10.3606 5.31506 11.0396C5.3467 11.905 5.50188 12.7743 5.78821 13.6139C5.88518 13.8982 5.81589 14.2126 5.60349 14.425L4.96448 15.064C3.59602 16.4325 3.5531 18.6607 4.90808 20.0426C6.27644 21.438 8.52556 21.4463 9.90442 20.0675L13.1857 16.7867C14.5622 15.4102 14.5564 13.1853 13.1857 11.8145C13.005 11.6342 12.8229 11.494 12.6807 11.3961C12.5801 11.327 12.4971 11.2354 12.4382 11.1285C12.3793 11.0217 12.3462 10.9025 12.3415 10.7806C12.3222 10.2646 12.505 9.73293 12.9127 9.32522L13.9407 8.29714C14.2103 8.02756 14.6332 7.99446 14.9458 8.21262C15.3038 8.4626 15.6391 8.74358 15.9479 9.05232ZM22.8295 2.17039C19.9359 -0.723267 15.2274 -0.723657 12.3334 2.17039L9.05212 5.45164C9.04626 5.4575 9.03992 5.46384 9.03455 5.4697C6.17488 8.34529 6.13479 13.0274 9.05212 15.9477C9.36085 16.2565 9.69615 16.5374 10.0541 16.7874C10.3667 17.0055 10.7897 16.9724 11.0592 16.7029L12.0872 15.6748C12.4949 15.2671 12.6778 14.7354 12.6584 14.2194C12.6537 14.0975 12.6206 13.9783 12.5618 13.8715C12.5029 13.7646 12.4198 13.673 12.3192 13.6039C12.177 13.506 11.995 13.3658 11.8143 13.1855C10.4435 11.8147 10.4378 9.58982 11.8143 8.21331L15.0955 4.93254C16.4744 3.55369 18.7235 3.56199 20.0919 4.95745C21.4468 6.33928 21.404 8.56751 20.0355 9.93596L19.3965 10.575C19.1841 10.7874 19.1148 11.1018 19.2117 11.3861C19.4981 12.2257 19.6532 13.095 19.6849 13.9604C19.7097 14.6394 20.5371 14.9587 21.0176 14.4782L22.8294 12.6664C25.7235 9.77292 25.7235 5.06394 22.8295 2.17039Z"
+                  fill="#CCD6F6" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+        <h1 class="text-lg font-bold font-ct my-3 text-[#ccd6f6]">Github Users </h1>
+        <p class="text-xs font-bold font-ct my-3 text-[#9aa1b8]">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Vel aperiam at sapiente provident obcaecati minima
+          id veniam ab sunt minus.</p>
+        <div class="flex justify-end gap-4 text-xs font-light font-ct my-3 text-[#ccd6f6]">
+          <span>Reactjs</span><span>FireBase</span><span>Radux</span>
+        </div>
+      </div>
+
+      <div class="bg-[#112240] shadow-sm hover:translate-y-2 transition-all p-8 h-auto m-4">
+
+        <div class="flex justify-between">
+          <a href="">
+            <svg width="20" height="20" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.6562 3.125H13.2812L10.1562 0H2.34375C1.04932 0 0 1.04932 0 2.34375V16.4062C0 17.7007 1.04932 18.75 2.34375 18.75H22.6562C23.9507 18.75 25 17.7007 25 16.4062V5.46875C25 4.17432 23.9507 3.125 22.6562 3.125Z"
+                fill="#CCD6F6" />
+            </svg>
+          </a>
+          <div class="flex gap-4">
+
+
+            <a href="https://fomo3d.net/">
+              <svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.9479 9.05232C18.8652 11.9727 18.8252 16.6548 15.9655 19.5303C15.9601 19.5362 15.9537 19.5426 15.9479 19.5484L12.6666 22.8297C9.77258 25.7237 5.06414 25.7233 2.17053 22.8297C-0.723511 19.9361 -0.723511 15.2271 2.17053 12.3336L3.98235 10.5218C4.46282 10.0413 5.29026 10.3606 5.31506 11.0396C5.3467 11.905 5.50188 12.7743 5.78821 13.6139C5.88518 13.8982 5.81589 14.2126 5.60349 14.425L4.96448 15.064C3.59602 16.4325 3.5531 18.6607 4.90808 20.0426C6.27644 21.438 8.52556 21.4463 9.90442 20.0675L13.1857 16.7867C14.5622 15.4102 14.5564 13.1853 13.1857 11.8145C13.005 11.6342 12.8229 11.494 12.6807 11.3961C12.5801 11.327 12.4971 11.2354 12.4382 11.1285C12.3793 11.0217 12.3462 10.9025 12.3415 10.7806C12.3222 10.2646 12.505 9.73293 12.9127 9.32522L13.9407 8.29714C14.2103 8.02756 14.6332 7.99446 14.9458 8.21262C15.3038 8.4626 15.6391 8.74358 15.9479 9.05232ZM22.8295 2.17039C19.9359 -0.723267 15.2274 -0.723657 12.3334 2.17039L9.05212 5.45164C9.04626 5.4575 9.03992 5.46384 9.03455 5.4697C6.17488 8.34529 6.13479 13.0274 9.05212 15.9477C9.36085 16.2565 9.69615 16.5374 10.0541 16.7874C10.3667 17.0055 10.7897 16.9724 11.0592 16.7029L12.0872 15.6748C12.4949 15.2671 12.6778 14.7354 12.6584 14.2194C12.6537 14.0975 12.6206 13.9783 12.5618 13.8715C12.5029 13.7646 12.4198 13.673 12.3192 13.6039C12.177 13.506 11.995 13.3658 11.8143 13.1855C10.4435 11.8147 10.4378 9.58982 11.8143 8.21331L15.0955 4.93254C16.4744 3.55369 18.7235 3.56199 20.0919 4.95745C21.4468 6.33928 21.404 8.56751 20.0355 9.93596L19.3965 10.575C19.1841 10.7874 19.1148 11.1018 19.2117 11.3861C19.4981 12.2257 19.6532 13.095 19.6849 13.9604C19.7097 14.6394 20.5371 14.9587 21.0176 14.4782L22.8294 12.6664C25.7235 9.77292 25.7235 5.06394 22.8295 2.17039Z"
+                  fill="#CCD6F6" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+        <h1 class="text-lg font-bold font-ct my-3 text-[#ccd6f6]">Fomo3d </h1>
+        <p class="text-xs font-bold font-ct my-3 text-[#9aa1b8]">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Vel aperiam at sapiente provident obcaecati minima
+          id veniam ab sunt minus.</p>
+        <div class="flex justify-end gap-4 text-xs font-light font-ct my-3 text-[#ccd6f6]">
+          <span>Reactjs</span><span>FireBase</span><span>Radux</span>
+        </div>
+      </div>
+
+      <div class="bg-[#112240] shadow-sm hover:translate-y-2 transition-all p-8 h-auto m-4">
+
+        <div class="flex justify-between">
+          <a href="">
+            <svg width="20" height="20" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.6562 3.125H13.2812L10.1562 0H2.34375C1.04932 0 0 1.04932 0 2.34375V16.4062C0 17.7007 1.04932 18.75 2.34375 18.75H22.6562C23.9507 18.75 25 17.7007 25 16.4062V5.46875C25 4.17432 23.9507 3.125 22.6562 3.125Z"
+                fill="#CCD6F6" />
+            </svg>
+          </a>
+          <div class="flex gap-4">
+
+            <a href="https://weather-app-faith-godwin.netlify.app/">
+              <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.10059 19.0137C8.10059 19.1113 7.98828 19.1895 7.84668 19.1895C7.68555 19.2041 7.57324 19.126 7.57324 19.0137C7.57324 18.916 7.68555 18.8379 7.82715 18.8379C7.97363 18.8232 8.10059 18.9014 8.10059 19.0137ZM6.58203 18.7939C6.54785 18.8916 6.64551 19.0039 6.79199 19.0332C6.91895 19.082 7.06543 19.0332 7.09473 18.9355C7.12402 18.8379 7.03125 18.7256 6.88477 18.6816C6.75781 18.6475 6.61621 18.6963 6.58203 18.7939ZM8.74023 18.7109C8.59863 18.7451 8.50098 18.8379 8.51562 18.9502C8.53027 19.0479 8.65723 19.1113 8.80371 19.0771C8.94531 19.043 9.04297 18.9502 9.02832 18.8525C9.01367 18.7598 8.88184 18.6963 8.74023 18.7109ZM11.9531 0C5.18066 0 0 5.1416 0 11.9141C0 17.3291 3.4082 21.9629 8.27637 23.5938C8.90137 23.7061 9.12109 23.3203 9.12109 23.0029C9.12109 22.7002 9.10645 21.0303 9.10645 20.0049C9.10645 20.0049 5.68848 20.7373 4.9707 18.5498C4.9707 18.5498 4.41406 17.1289 3.61328 16.7627C3.61328 16.7627 2.49512 15.9961 3.69141 16.0107C3.69141 16.0107 4.90723 16.1084 5.57617 17.2705C6.64551 19.1553 8.4375 18.6133 9.13574 18.291C9.24805 17.5098 9.56543 16.9678 9.91699 16.6455C7.1875 16.3428 4.43359 15.9473 4.43359 11.25C4.43359 9.90723 4.80469 9.2334 5.58594 8.37402C5.45898 8.05664 5.04395 6.74805 5.71289 5.05859C6.7334 4.74121 9.08203 6.37695 9.08203 6.37695C10.0586 6.10352 11.1084 5.96191 12.1484 5.96191C13.1885 5.96191 14.2383 6.10352 15.2148 6.37695C15.2148 6.37695 17.5635 4.73633 18.584 5.05859C19.2529 6.75293 18.8379 8.05664 18.7109 8.37402C19.4922 9.23828 19.9707 9.91211 19.9707 11.25C19.9707 15.9619 17.0947 16.3379 14.3652 16.6455C14.8145 17.0312 15.1953 17.7637 15.1953 18.9111C15.1953 20.5566 15.1807 22.5928 15.1807 22.9932C15.1807 23.3105 15.4053 23.6963 16.0254 23.584C20.9082 21.9629 24.2188 17.3291 24.2188 11.9141C24.2188 5.1416 18.7256 0 11.9531 0ZM4.74609 16.8408C4.68262 16.8896 4.69727 17.002 4.78027 17.0947C4.8584 17.1729 4.9707 17.207 5.03418 17.1436C5.09766 17.0947 5.08301 16.9824 5 16.8896C4.92188 16.8115 4.80957 16.7773 4.74609 16.8408ZM4.21875 16.4453C4.18457 16.5088 4.2334 16.5869 4.33105 16.6357C4.40918 16.6846 4.50684 16.6699 4.54102 16.6016C4.5752 16.5381 4.52637 16.46 4.42871 16.4111C4.33105 16.3818 4.25293 16.3965 4.21875 16.4453ZM5.80078 18.1836C5.72266 18.2471 5.75195 18.3936 5.86426 18.4863C5.97656 18.5986 6.11816 18.6133 6.18164 18.5352C6.24512 18.4717 6.21582 18.3252 6.11816 18.2324C6.01074 18.1201 5.86426 18.1055 5.80078 18.1836ZM5.24414 17.4658C5.16602 17.5146 5.16602 17.6416 5.24414 17.7539C5.32227 17.8662 5.4541 17.915 5.51758 17.8662C5.5957 17.8027 5.5957 17.6758 5.51758 17.5635C5.44922 17.4512 5.32227 17.4023 5.24414 17.4658Z"
+                  fill="#CCD6F6" />
+              </svg>
+            </a>
+
+            <a href="https://github.com/Iam-Ignite/weather-app">
+              <svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.9479 9.05232C18.8652 11.9727 18.8252 16.6548 15.9655 19.5303C15.9601 19.5362 15.9537 19.5426 15.9479 19.5484L12.6666 22.8297C9.77258 25.7237 5.06414 25.7233 2.17053 22.8297C-0.723511 19.9361 -0.723511 15.2271 2.17053 12.3336L3.98235 10.5218C4.46282 10.0413 5.29026 10.3606 5.31506 11.0396C5.3467 11.905 5.50188 12.7743 5.78821 13.6139C5.88518 13.8982 5.81589 14.2126 5.60349 14.425L4.96448 15.064C3.59602 16.4325 3.5531 18.6607 4.90808 20.0426C6.27644 21.438 8.52556 21.4463 9.90442 20.0675L13.1857 16.7867C14.5622 15.4102 14.5564 13.1853 13.1857 11.8145C13.005 11.6342 12.8229 11.494 12.6807 11.3961C12.5801 11.327 12.4971 11.2354 12.4382 11.1285C12.3793 11.0217 12.3462 10.9025 12.3415 10.7806C12.3222 10.2646 12.505 9.73293 12.9127 9.32522L13.9407 8.29714C14.2103 8.02756 14.6332 7.99446 14.9458 8.21262C15.3038 8.4626 15.6391 8.74358 15.9479 9.05232ZM22.8295 2.17039C19.9359 -0.723267 15.2274 -0.723657 12.3334 2.17039L9.05212 5.45164C9.04626 5.4575 9.03992 5.46384 9.03455 5.4697C6.17488 8.34529 6.13479 13.0274 9.05212 15.9477C9.36085 16.2565 9.69615 16.5374 10.0541 16.7874C10.3667 17.0055 10.7897 16.9724 11.0592 16.7029L12.0872 15.6748C12.4949 15.2671 12.6778 14.7354 12.6584 14.2194C12.6537 14.0975 12.6206 13.9783 12.5618 13.8715C12.5029 13.7646 12.4198 13.673 12.3192 13.6039C12.177 13.506 11.995 13.3658 11.8143 13.1855C10.4435 11.8147 10.4378 9.58982 11.8143 8.21331L15.0955 4.93254C16.4744 3.55369 18.7235 3.56199 20.0919 4.95745C21.4468 6.33928 21.404 8.56751 20.0355 9.93596L19.3965 10.575C19.1841 10.7874 19.1148 11.1018 19.2117 11.3861C19.4981 12.2257 19.6532 13.095 19.6849 13.9604C19.7097 14.6394 20.5371 14.9587 21.0176 14.4782L22.8294 12.6664C25.7235 9.77292 25.7235 5.06394 22.8295 2.17039Z"
+                  fill="#CCD6F6" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+        <h1 class="text-lg font-bold font-ct my-3 text-[#ccd6f6]">Weather App </h1>
+        <p class="text-xs font-bold font-ct my-3 text-[#9aa1b8]">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Vel aperiam at sapiente provident obcaecati minima
+          id veniam ab sunt minus.</p>
+        <div class="flex justify-end gap-4 text-xs font-light font-ct my-3 text-[#ccd6f6]">
+          <span>Reactjs</span><span>FireBase</span><span>Radux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="flex items-center justify-center gap-4 h-screen">
+    <div class="flex flex-col md:w-2/4 px-10 gap-4 items-center">
+      <h1 class="font-bold text-center font-ct text-[#ccd6f6] text-2xl md:text-4xl pt-16">Get In Touch </h1>
+
+      <p class="font-bold text-center font-ct text-[#ccd6f6] texl-xl">I’m currently looking for a new opportunity, my
+        inbox is always open. Feel free to say hi!</p>
+      <a href="mailto:faithgodwin821@gmail.com" class=" border md:inline text-[#64FFDA] border-[#64FFDA] px-4 py-2
+        rounded-3xl"><span class="font-ct">Email Me </span></a>
+    </div>
+
+  </section>
+
+  <section class="py-4">
+    <p class="text-center font-bold font-ct text-[#ccd6f6] texl-xl">Designed by @ignite &copy;2033</p>
+    </div>
+  </section>
+  <div>
+  </div>
+
+  <style>
+    a:hover {
+      color: #64FFDA;
+    }
+
+    path:hover {
+      color: #64FFDA;
+
+    }
+
+    .animate {
+      font-family: 'Rampart One';
+      font-size: 7rem;
+    }
+
+    .wrap {
+      /* position: fixed; */
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: auto;
+    }
+
+    .wrap h1,
+    svg path {
+      font-weight: 700;
+      font-size: 7rem;
+      background: #2e3192;
+      background: linear-gradient(270deg, #64FFDA, #1bffff, #0a192f, #64FFDA, #0a192f);
+      background-size: 1600% 1600%;
+      -webkit-animation: GradientAnim 3s ease infinite;
+      animation: GradientAnim 5s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @-webkit-keyframes GradientAnim {
+
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 100% 50%;
+
+      }
+    }
+
+    @keyframes GradientAnim {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 100% 50%;
+
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .wrap h1 {
+        font-size: 3rem;
+
+
+      }
+
+      .wrap svg {
+        width: 241px;
+      }
+    }
+
+    /* 
+    #loading {
+      display: block;
+    } */
+  </style>
+  <script>
+    window.addEventListener('load', () => {
+      // Hide loading state
+      const loading = document.getElementById('loading');
+      loading.style.display = 'none';
+
+    });
+
+    const handleShareButton = (url) => {
+      const socialLink = `https://api.whatsapp.com/send/?text=${encodeURIComponent("Hello Faith")}`;
+      window.open(socialLink, '_blank');
+    };
+  </script>
+
+  <script src="swiper"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../src/swiper.js"></script>
+  <script src="../src/index.js"></script>
+  <script src="../src/custom.js"></script>
+
+</body>
+
+</html>
